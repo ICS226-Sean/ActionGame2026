@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "Crash_1_Crash_Bandicoot.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Crash_1_Crash_Bandicoot 1.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "Crash_1_Crash_Bandicoot 2.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
