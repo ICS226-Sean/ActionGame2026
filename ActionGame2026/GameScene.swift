@@ -6,6 +6,14 @@ class GameScene: SKScene {
         sprite.position = CGPoint(x: size.width / 2, y: size.height / 2)
         sprite.size = CGSize(width: 50, height: 50)
         addChild(sprite)
+        
+        let opponentSprite = SKSpriteNode(imageNamed: "OpponentSprite")
+        opponentSprite.position = CGPoint(x: size.width / 2, y: size.height)
+        addChild(opponentSprite)
+        let downMovement = SKAction.move(to: CGPoint(x: size.width / 2, y: 0), duration: 1)
+        let upMovement = SKAction.move(to: CGPoint(x: size.width / 2, y: size.height), duration: 1)
+        let movement = SKAction.sequence([downMovement, upMovement])
+        opponentSprite.run(SKAction.repeatForever(movement))
     }
     func touchDown(atPoint pos : CGPoint) {
         
